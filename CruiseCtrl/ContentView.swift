@@ -8,18 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selectedTabIndex = 0
+    @State private var selectedTabIndex = 1
 
     var body: some View {
         TabView(selection: $selectedTabIndex) {
-            HomeView()
+            RequestView()
                 .tag(0)
                 .tabItem {
-                    Label("Home", systemImage: "house.fill")
+                    Label("Profile", systemImage: "person.crop.circle.fill")
                 }
             
-            ProfileView()
-                .tag(1)
+            
+            DriverView()
+                .tag(2)
+                .tabItem {
+                    Label("Profile", systemImage: "person.crop.circle.fill")
+                }
+            AdminView()
+                .tag(3)
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle.fill")
                 }

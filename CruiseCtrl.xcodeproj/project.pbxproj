@@ -13,7 +13,13 @@
 		1F1293802AB9485A007C67D1 /* CruiseCtrlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12937F2AB9485A007C67D1 /* CruiseCtrlTests.swift */; };
 		1F12938A2AB9485A007C67D1 /* CruiseCtrlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1293892AB9485A007C67D1 /* CruiseCtrlUITests.swift */; };
 		1F12938C2AB9485A007C67D1 /* CruiseCtrlUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12938B2AB9485A007C67D1 /* CruiseCtrlUITestsLaunchTests.swift */; };
-		BAA7E6BB2AB9E1C2004C4662 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7E6BA2AB9E1C2004C4662 /* HomeView.swift */; };
+		BA82E12A2ABA166B00F5350C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E1292ABA166B00F5350C /* LoginView.swift */; };
+		BA82E12C2ABA167D00F5350C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E12B2ABA167D00F5350C /* RegisterView.swift */; };
+		BA82E12E2ABA168E00F5350C /* NewHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E12D2ABA168E00F5350C /* NewHouseView.swift */; };
+		BA82E1312ABA173500F5350C /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E1302ABA173500F5350C /* RequestView.swift */; };
+		BA82E1332ABA174300F5350C /* DriverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E1322ABA174300F5350C /* DriverView.swift */; };
+		BA82E1352ABA174F00F5350C /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E1342ABA174F00F5350C /* AdminView.swift */; };
+		BA82E13C2ABA1DA200F5350C /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E13B2ABA1DA200F5350C /* AuthManager.swift */; };
 		BAA7E6BD2AB9E2E6004C4662 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7E6BC2AB9E2E6004C4662 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +50,13 @@
 		1F1293852AB9485A007C67D1 /* CruiseCtrlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CruiseCtrlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F1293892AB9485A007C67D1 /* CruiseCtrlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CruiseCtrlUITests.swift; sourceTree = "<group>"; };
 		1F12938B2AB9485A007C67D1 /* CruiseCtrlUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CruiseCtrlUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		BAA7E6BA2AB9E1C2004C4662 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BA82E1292ABA166B00F5350C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BA82E12B2ABA167D00F5350C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		BA82E12D2ABA168E00F5350C /* NewHouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHouseView.swift; sourceTree = "<group>"; };
+		BA82E1302ABA173500F5350C /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
+		BA82E1322ABA174300F5350C /* DriverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverView.swift; sourceTree = "<group>"; };
+		BA82E1342ABA174F00F5350C /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		BA82E13B2ABA1DA200F5350C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		BAA7E6BC2AB9E2E6004C4662 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,8 +110,8 @@
 			children = (
 				1F12936E2AB94859007C67D1 /* CruiseCtrlApp.swift */,
 				1F1293702AB94859007C67D1 /* ContentView.swift */,
-				BAA7E6BA2AB9E1C2004C4662 /* HomeView.swift */,
-				BAA7E6BC2AB9E2E6004C4662 /* ProfileView.swift */,
+				BA82E12F2ABA169900F5350C /* Main View */,
+				BA82E1282ABA163900F5350C /* Authentification */,
 				1F1293722AB9485A007C67D1 /* Assets.xcassets */,
 			);
 			path = CruiseCtrl;
@@ -120,6 +132,28 @@
 				1F12938B2AB9485A007C67D1 /* CruiseCtrlUITestsLaunchTests.swift */,
 			);
 			path = CruiseCtrlUITests;
+			sourceTree = "<group>";
+		};
+		BA82E1282ABA163900F5350C /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				BA82E1292ABA166B00F5350C /* LoginView.swift */,
+				BA82E12B2ABA167D00F5350C /* RegisterView.swift */,
+				BA82E12D2ABA168E00F5350C /* NewHouseView.swift */,
+				BA82E13B2ABA1DA200F5350C /* AuthManager.swift */,
+			);
+			path = Authentification;
+			sourceTree = "<group>";
+		};
+		BA82E12F2ABA169900F5350C /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				BAA7E6BC2AB9E2E6004C4662 /* ProfileView.swift */,
+				BA82E1302ABA173500F5350C /* RequestView.swift */,
+				BA82E1322ABA174300F5350C /* DriverView.swift */,
+				BA82E1342ABA174F00F5350C /* AdminView.swift */,
+			);
+			path = "Main View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,10 +285,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA82E1312ABA173500F5350C /* RequestView.swift in Sources */,
+				BA82E1332ABA174300F5350C /* DriverView.swift in Sources */,
 				BAA7E6BD2AB9E2E6004C4662 /* ProfileView.swift in Sources */,
-				BAA7E6BB2AB9E1C2004C4662 /* HomeView.swift in Sources */,
+				BA82E1352ABA174F00F5350C /* AdminView.swift in Sources */,
 				1F1293712AB94859007C67D1 /* ContentView.swift in Sources */,
+				BA82E12C2ABA167D00F5350C /* RegisterView.swift in Sources */,
+				BA82E12A2ABA166B00F5350C /* LoginView.swift in Sources */,
 				1F12936F2AB94859007C67D1 /* CruiseCtrlApp.swift in Sources */,
+				BA82E12E2ABA168E00F5350C /* NewHouseView.swift in Sources */,
+				BA82E13C2ABA1DA200F5350C /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
