@@ -8,40 +8,42 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @State private var firstName: String = ""
-    @State private var lastName: String = ""
-    @State private var house: String = ""
-    
+    @State private var firstName: String = "Aadit"
+    @State private var lastName: String = "Nagori"
+    @State private var house: String = "LXA EHZ"
+   
     var body: some View {
-        ZStack {
-            Color.black.edgesIgnoringSafeArea(.all)
-            VStack(spacing: 20) {
-                Image(systemName: "person.crop.circle.fill") // Default Image
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 100, height: 100)
-                    .foregroundColor(.white)
+        //Color.black.ignoresSafeArea(.all)
+        ZStack(){
+            Color.black.ignoresSafeArea(.all)
+            VStack(alignment: .leading) {
                 
-                TextField("First Name", text: $firstName)
+                HStack(){
+                    Text("Profile")
+                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
                     .padding()
-                    .background(Color.white)
-                    .cornerRadius(8.0)
-                
-                TextField("Last Name", text: $lastName)
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(8.0)
-                
-                TextField("House", text: $house)
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(8.0)
-                
+                    Spacer()
+                }
+                .foregroundStyle(.white)
+                VStack(alignment: .leading) {
+                    Text("Firstname: \(firstName)")
+                    Text("Lastname: \(lastName)")
+                    Text("House code: \(house)")
+                }
+                .foregroundStyle(.white)
+                .padding()
                 Spacer()
+                
+                
             }
-            .padding()
         }
+        
+       
+        
     }
+    
+
 }
 
 struct ProfileView_Previews: PreviewProvider {

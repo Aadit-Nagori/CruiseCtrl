@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DriverView: View {
     var body: some View {
-        Text("L BOZO DONT CRASH🤡")
+        Text("Driver View")
     }
 }
 
