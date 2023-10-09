@@ -52,11 +52,25 @@ struct NewHouseView: View {
                         .padding()
                         .background(Color.white)
                         .cornerRadius(8.0)
-                    
+                    Button(action: submit, label: {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 10)
+                                .foregroundStyle(.blue)
+                            Text("Submit")
+                                .foregroundColor(.white)
+                            
+                        }
+                        
+                    })
+                    .frame(width: 200, height: 50)
                     Spacer()
+                    
                 }.foregroundStyle(.gray)
             }.padding()
         }
+    }
+    func submit(){
+        
     }
 }
 
